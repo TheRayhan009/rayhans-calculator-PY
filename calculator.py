@@ -47,7 +47,7 @@ def rul():
     print("+ 1")
     print("+ 1")
     print("+ 1")
-    print("6. \" % \" means remainder.")
+    print("Final result: 4")
     print("--------------------------------------------------------------------------------------------------")
 def want():
     print("How many numbers do you want to count?")
