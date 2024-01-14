@@ -1,53 +1,29 @@
-def calculator(a, sine, b, ans=0):
-    x = int(a)
-    y = int(b)
-    if sine == "+":
-        return x + y
-    elif sine == "-":
-        return x - y
-    elif sine == "x":
-        return x * y
-    elif sine == "/":
-        return x / y
-    elif sine == "^":
-        return x ** y
-    elif sine == "%":
-        return x % y
+# a,sine,b=map(str,input().split())
+# x=int (a)
+# y=int (b)
+# if sine=="+":
+#     print("Ans ->",x+y)
+# elif sine=="-":
+#     print("Ans ->",x-y)
+# elif sine=="x":
+#     print("Ans ->",x*y)
+# elif sine=="/":
+#     print("Ans ->",x/y)
+# elif sine=="^":
+#     print("Ans ->",x**y)
+# elif sine=="%":
+#     print("Ans ->",x%y)
 
+from pak import calculator as af
 
-def calculator2(sine, b, ans):
-    b = int(b)
-    if sine == "+":
-        return ans + b
-    elif sine == "-":
-        return ans - b
-    elif sine == "*":  # Change "ans" to "*" for multiplication
-        return ans * b
-    elif sine == "/":
-        return ans / b
-    elif sine == "^":
-        return ans ** b
-    elif sine == "%":
-        return ans % b
+af.rul()
+af.want()
+input1 = int(input())
+#a, sine, b = map(str, input().split())
+#ans = af.calculator(a, sine, b, ans=0)
+ans=0
+for _ in range(input1):
+    sine, b = map(str, input().split())
+    ans=ans+af.calculator2(sine, b, ans=0)
 
-    
-
-
-def rul():
-    print("--------------------------------------------------------------------------------------------------")
-    print("enter the first number. then add sine(+ , - , * , / , ^ , % ).then enter the second number.")
-    print("1. \" + \" means submission. ")
-    print("2. \" - \" means subtraction. ")
-    print("3. \" x \" means multiplication. ")
-    print("4. \" / \" means division. ")
-    print("5. \" ^ \" means pawor.")
-    print("6. \" % \" means remainder.")
-    print("like: 4")
-    print("+ 1")
-    print("+ 1")
-    print("+ 1")
-    print("+ 1")
-    print("Final result: 4")
-    print("--------------------------------------------------------------------------------------------------")
-def want():
-    print("How many numbers do you want to count?")
+print("Final result:", ans)
