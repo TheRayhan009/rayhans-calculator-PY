@@ -42,6 +42,12 @@ def rul():
     print("4. \" / \" means division. ")
     print("5. \" ^ \" means pawor.")
     print("6. \" % \" means remainder.")
+    print("like: 4")
+    print("+ 1")
+    print("+ 1")
+    print("+ 1")
+    print("+ 1")
+    print("6. \" % \" means remainder.")
     print("--------------------------------------------------------------------------------------------------")
 def want():
     print("How many numbers do you want to count?")
